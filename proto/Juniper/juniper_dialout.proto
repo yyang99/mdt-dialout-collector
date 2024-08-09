@@ -1,7 +1,7 @@
 syntax = "proto3";
-import "gnmi.proto";
+import "juniper_gnmi.proto";
 
-package Nokia.SROS;
+// package Nokia.SROS;
 
 service DialoutTelemetry {
   rpc Publish(stream gnmi.SubscribeResponse) returns (stream PublishResponse);
