@@ -6,4 +6,4 @@ import "juniper_gnmi.proto";
 service Subscriber {
   rpc DialOutSubscriber(stream gnmi.SubscribeResponse) returns (stream PublishResponse);
 }
-//message PublishResponse {}
+message PublishResponse {}
