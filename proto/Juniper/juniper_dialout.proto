@@ -4,6 +4,6 @@ import "juniper_gnmi.proto";
 // package Nokia.SROS;
 
 service Subscriber {
-  rpc Publish(stream gnmi.SubscribeResponse) returns (stream PublishResponse);
+  rpc DialOutSubscriber(stream gnmi.SubscribeResponse) returns (stream PublishResponse);
 }
-message PublishResponse {}
+//message PublishResponse {}
